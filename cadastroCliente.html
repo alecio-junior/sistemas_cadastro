@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro de novos Clientes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funcoes.js"></script>
+    <script>
+        var usuarioLogado = sessionStorage.getItem('logado');
+
+    if (!usuarioLogado) {
+    window.location = "index.html";
+    }
+    </script>
+</head>
+
+<body>
+    <!--Formulário: Nome, código e quantidade de produtos-->
+    <form>
+        <table>
+            <caption>Cadastro de novos clientes</caption>
+            <!--Nome do cliente-->
+            <tr>
+                <td class="alinharRotulos">Nome do cliente:</td>
+                <td><input id="txtNomeCliente" type="text"></td>
+            </tr>
+             <!--endereço do cliente-->
+            <tr>
+                <td class="alinharRotulos">endereço do cliente:</td>
+                <td><input id="txtEnderecoCliente" type="text"></td>
+            </tr>
+             <!--CPF do cliente-->
+            <tr>
+                <td class="alinharRotulos">CPF do cliente:</td>
+                <td><input id="txtCpfCliente" type="text"></td>
+            </tr>
+            <!--Código da venda do cliente-->
+            <tr>
+                <td class="alinharRotulos">Telefone do cliente</td>
+                <td><input id="txtTeleCliente" type="text"></td>
+            </tr>
+            <!--Botoes-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarCliente('txtNomeCliente','txtEnderecoCliente','txtCpfCliente','txtTeleCliente')">
+                    <input type="button" value="Ver cliente" class="alinhaBtns" onclick="window.open('verCliente.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

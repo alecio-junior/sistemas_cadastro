@@ -1,0 +1,52 @@
+
+.alinharRotulos {
+    text-align: right;
+}
+.alinhaBtns {
+    width:30%;
+    background-color: black;
+    color:white;
+    border:0px;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.carrinho {
+    width:300px; 
+    float:right;
+}
+.carrinho p {
+    display: inline;
+}
+table {
+    clear:both; 
+    background-color: rgb(213,97,100);
+    border-radius: 10px; 
+    color:white;
+    padding:10px;
+    width:400px;
+    margin:auto;
+    margin-top: 150px;
+}
+caption {
+    color:rgb(213,97,100); 
+    font-weight: bold; 
+    font-size: 25px;
+}
+
+footer {
+    display: block;
+}
+
+footer {
+
+    text-decoration: none;
+    text-align: center;
+    background-color: #f9f9f9ff;
+    width: 100%;
+    height: 100px;
+    bottom: 100px;
+    left: 100px;
+    margin-top: 238px;
+}

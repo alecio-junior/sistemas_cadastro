@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/tabela.css">
+    <title>Cadastro de produtos</title>
+    <script src="js/funcoes.js"></script>
+    <script>
+        var usuarioLogado = sessionStorage.getItem('logado');
+
+    if (!usuarioLogado) {
+    window.location = "intex.html";
+    }
+    </script>
+</head>
+<body onload="listarEstoque()">
+    <div class="tabela">
+        <table width="60%" border=" solid 1px">
+        <tbody><tr><th>Nome</th>
+        <th>codigo</th>
+        <th>preço</th>
+        <th>quantidade</th>
+        </tr></tbody><tbody id="corpoTabela">
+
+            </tbody>
+        </table>
+        <button onclick="window.open('cadastroProduto.html','_self')"> Voltar </button>
+        
+    </div>
+</body>
+</html>

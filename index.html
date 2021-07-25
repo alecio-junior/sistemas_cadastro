@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tela de login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+
+<script>
+sessionStorage.setItem('usuario', 'admin');
+sessionStorage.setItem('senha', 'admin');
+</script>
+
+    <!--tela de login-->
+    <form>
+        <table>
+            <caption>Login</caption>
+            <!--Nome do cliente-->
+            <tr>
+                <td class="alinharRotulos">usuario:</td>
+                <td><input id="txtUsuario" type="text"></td>
+            </tr>
+             <!--endereço do cliente-->
+            <tr>
+                <td class="alinharRotulos">senha:</td>
+                <td><input id="txtSenha" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="ENTRAR" class="alinhaBtns"  onclick="validarAcesso('txtUsuario','txtSenha')">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <br>
+        <br>
+        <span class="nome">Desenvolvido por</span>
+        <span>
+         <a href="https://www.linkedin.com/in//" class="nome"> © Alecio junior / para o programa Hiring code</a>
+        </span>
+    </footer>
+</body>
+
+</html>
